@@ -4,7 +4,10 @@ export default function Header({array}) {
     console.log(array)
   return (
     <div>
-      <h1>{array[0].name}</h1>
+      {array.map((e)=>{
+        return <h1>{e.name}</h1> 
+      }
+      )}
     </div>
   )
 }
